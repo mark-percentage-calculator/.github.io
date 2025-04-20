@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | StudentTools</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About - Marks Percentage Calculator</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <div id="header"></div>
-    
-    <main class="container">
-        <h1>About Our Percentage Calculator</h1>
-        <p>Our free online tool helps students quickly calculate their marks percentage...</p>
-    </main>
-
-    <div id="footer"></div>
+    <div class="container">
+        <header id="header"></header>
+        <main>
+            <h1>About Marks Percentage Calculator</h1>
+            <p>This is a simple tool to calculate your marks percentage.</p>
+        </main>
+        <footer id="footer"></footer>
+    </div>
 
     <script>
-        fetch('header.html')
+        fetch('../includes/header.html')
             .then(response => response.text())
             .then(data => document.getElementById('header').innerHTML = data);
-        
-        fetch('footer.html')
+
+        fetch('../includes/footer.html')
             .then(response => response.text())
             .then(data => document.getElementById('footer').innerHTML = data);
     </script>
