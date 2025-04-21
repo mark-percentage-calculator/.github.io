@@ -194,15 +194,6 @@ button#calculate-btn:hover {
     color: var(--dark-color);
 }
 
-.grading-system {
-    list-style-type: none;
-}
-
-.grading-system li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #eee;
-}
-
 /* Footer Styles */
 footer {
     background-color: var(--dark-color);
@@ -238,21 +229,6 @@ footer {
 
 .footer-section ul li a:hover {
     color: white;
-}
-
-.social-icons {
-    display: flex;
-    gap: 1rem;
-}
-
-.social-icons a {
-    color: white;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: var(--primary-color);
 }
 
 .copyright {
