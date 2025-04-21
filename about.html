@@ -3,27 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Marks Percentage Calculator</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="description" content="About Marks Percentage Calculator - A free tool for students to calculate their exam percentages.">
+    <title>About | Marks Percentage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header id="header"></header>
-        <main>
-            <h1>About Marks Percentage Calculator</h1>
-            <p>This is a simple tool to calculate your marks percentage.</p>
-        </main>
-        <footer id="footer"></footer>
-    </div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Marks Percentage Calculator</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <script>
-        fetch('../includes/header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header').innerHTML = data);
+    <main class="container">
+        <section class="about-section">
+            <h2>About Our Marks Percentage Calculator</h2>
+            
+            <article>
+                <h3>Our Mission</h3>
+                <p>At Marks Percentage Calculator, our mission is to provide students with simple, accurate tools to help them understand their academic performance. We believe that by making percentage calculations easy and accessible, we can help students focus more on their studies and less on complex calculations.</p>
+                
+                <h3>How It Works</h3>
+                <p>Our calculator uses the standard percentage formula that's universally accepted in educational institutions. Simply enter your obtained marks and the total possible marks, and our system instantly calculates your percentage along with a corresponding grade.</p>
+                
+                <h3>Why Use Our Calculator?</h3>
+                <ul>
+                    <li><strong>Accuracy:</strong> Our calculations are precise and reliable</li>
+                    <li><strong>Speed:</strong> Get results instantly without manual calculations</li>
+                    <li><strong>Free:</strong> No cost, no registration required</li>
+                    <li><strong>Accessible:</strong> Works on all devices - phones, tablets, and computers</li>
+                </ul>
+                
+                <h3>Our Team</h3>
+                <p>We're a group of educators and developers who saw a need for simple academic tools. Our team combines teaching experience with technical expertise to create useful resources for students worldwide.</p>
+                
+                <h3>Future Plans</h3>
+                <p>We're continuously working to add more educational tools to our platform, including GPA calculators, CGPA converters, and subject-specific performance analyzers.</p>
+            </article>
+        </section>
+    </main>
 
-        fetch('../includes/footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data);
-    </script>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Educational Tools</h3>
+                    <ul>
+                        <li><a href="#">GPA Calculator</a></li>
+                        <li><a href="#">CGPA Calculator</a></li>
+                        <li><a href="#">Grade Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Marks Percentage Calculator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
