@@ -3,46 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marks Percentage Calculator</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Free online marks percentage calculator for students. Calculate your exam scores quickly and accurately.">
+    <meta name="keywords" content="marks calculator, percentage calculator, exam score calculator, grade calculator, student tools">
+    <title>Marks Percentage Calculator | Student Academic Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header id="header"></header>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Marks Percentage Calculator</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <!-- Main Content -->
-        <main>
-            <h1>Marks Percentage Calculator</h1>
-            <div id="calculator">
-                <label for="totalMarks">Total Marks:</label>
-                <input type="number" id="totalMarks" placeholder="Enter Total Marks" value="100">
-
-                <label for="obtainedMarks">Obtained Marks:</label>
-                <input type="number" id="obtainedMarks" placeholder="Enter Obtained Marks">
-
-                <button id="calculateBtn">Calculate</button>
-
-                <div id="result">
-                    Percentage: <span id="percentage">0.00</span>%
+    <main class="container">
+        <section class="calculator-section">
+            <h2>Calculate Your Marks Percentage</h2>
+            <p>Enter your marks details below to calculate your percentage</p>
+            
+            <div class="calculator-form">
+                <div class="input-group">
+                    <label for="total-marks">Total Marks (Exam/Subject):</label>
+                    <input type="number" id="total-marks" placeholder="e.g., 100, 500, etc.">
+                </div>
+                
+                <div class="input-group">
+                    <label for="obtained-marks">Marks Obtained:</label>
+                    <input type="number" id="obtained-marks" placeholder="Enter your marks">
+                </div>
+                
+                <button id="calculate-btn">Calculate Percentage</button>
+                
+                <div class="result" id="result">
+                    <h3>Your Result:</h3>
+                    <div class="result-box">
+                        <p>Percentage: <span id="percentage">--</span>%</p>
+                        <p>Grade: <span id="grade">--</span></p>
+                        <p>Status: <span id="status">--</span></p>
+                    </div>
                 </div>
             </div>
-        </main>
+        </section>
+        
+        <section class="info-section">
+            <article>
+                <h3>How to Calculate Marks Percentage</h3>
+                <p>Calculating your marks percentage is a simple process that helps you understand your academic performance. The formula used is:</p>
+                <p class="formula">(Obtained Marks ÷ Total Marks) × 100 = Percentage</p>
+                <p>For example, if you scored 450 marks out of 500, your calculation would be (450 ÷ 500) × 100 = 90%.</p>
+                
+                <h3>Why Calculate Your Percentage?</h3>
+                <p>Knowing your percentage helps in:</p>
+                <ul>
+                    <li>Evaluating your academic performance</li>
+                    <li>Setting goals for improvement</li>
+                    <li>Understanding where you stand in class</li>
+                    <li>Applying for scholarships or higher education</li>
+                </ul>
+                
+                <h3>Grading System Reference</h3>
+                <p>Our calculator uses a standard grading system:</p>
+                <ul class="grading-system">
+                    <li>90% and above: A+ (Excellent)</li>
+                    <li>80-89%: A (Very Good)</li>
+                    <li>70-79%: B (Good)</li>
+                    <li>60-69%: C (Average)</li>
+                    <li>50-59%: D (Below Average)</li>
+                    <li>Below 50%: F (Fail)</li>
+                </ul>
+            </article>
+        </section>
+    </main>
 
-        <!-- Footer -->
-        <footer id="footer"></footer>
-    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Educational Tools</h3>
+                    <ul>
+                        <li><a href="#">GPA Calculator</a></li>
+                        <li><a href="#">CGPA Calculator</a></li>
+                        <li><a href="#">Grade Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Marks Percentage Calculator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-    <script src="js/script.js"></script>
-    <script>
-        // Load Header and Footer using JavaScript
-        fetch('includes/header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header').innerHTML = data);
-
-        fetch('includes/footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
